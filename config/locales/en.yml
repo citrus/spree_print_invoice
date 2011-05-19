@@ -1,11 +1,11 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 
 en:
-  footer_left: "Return in\Other info"
+  footer_left: "Return in\nOther info"
   footer_left2: " 14 days \n or never"
 
-  footer_right: "Company  \Phone  \n www "
-  footer_right2: " My great company \n040 146 1222 \n  www.gohereoften.com"
+  footer_right: "Company  \nPhone  \n Website "
+  footer_right2: " My great company \n040 146 1222 \n  example.com"
   invoice:
     header: Customer Invoice
     thanks: Thank you for your order
