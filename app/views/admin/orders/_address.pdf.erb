@@ -29,7 +29,7 @@ anonymous = @order.email =~ /@example.net$/
     data2 << ["#{@order.bill_address.zipcode} #{@order.bill_address.city}  #{(@order.bill_address.state ? @order.bill_address.state.abbr : "")} ",
                 "#{@order.ship_address.zipcode} #{@order.ship_address.city} #{(@order.ship_address.state ? @order.ship_address.state.abbr : "")}"]
     data2 << [bill_address.country.name, ship_address.country.name]
-    data2 << [bill_address.phone, ship_address.phone]
+    data2 << [number_to_phone(bill_address.phone), number_to_phone(ship_address.phone)]
   end
   
   @pdf.table data2,
